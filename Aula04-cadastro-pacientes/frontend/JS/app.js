@@ -1,10 +1,10 @@
 // Em produção (Render). Para testar localmente, troque por 'http://localhost:3000/pacientes'
-const URL_API = 'https://api-clinica-viniciusmonteiro.onrender.com/pacientes';
+const URL_API = 'https://ps1-ads4-2026-2-monteiro.onrender.comgi/pacientes';
 
 const formulario = document.getElementById('form-paciente');
 const tabela = document.getElementById('tabela-pacientes');
 const mensagem = document.getElementById('mensagem');
-const mensagemCarregando = document.getElementById('carregando');
+const mensagemCarregando = document.getElementById('carregando');s
 const campoId = document.getElementById('id');
 const campoNome = document.getElementById('nome');
 const campoEmail = document.getElementById('email');
