@@ -1,23 +1,18 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 
 
-const app = express();
+        
 
-app.use(cors());
-app.use(express.json());
 
-// Como o server.js está dentro de 'backend', subimos um nível (..) e entramos em 'frontend'
-app.use(express.static(path.join(__dirname, '../frontend')));
 
-// Rota de teste ou suas rotas de API continuam aqui...
+
 
 const app = express();
 
 // Middlewares: rodam antes de todas as rotas
-app.use(cors());          // libera o acesso do frontend (outra origem)
-app.use(express.json());  // converte o body JSON em objeto, disponível em req.body
+app.use(cors());         
+app.use(express.json()); 
 
 // "Banco de dados" em memória (será substituído na Aula 5)
 const pacientes = [
