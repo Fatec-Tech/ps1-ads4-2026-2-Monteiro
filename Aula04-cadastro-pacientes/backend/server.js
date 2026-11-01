@@ -1,5 +1,17 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
+
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Como o server.js está dentro de 'backend', subimos um nível (..) e entramos em 'frontend'
+app.use(express.static(path.join(__dirname, '../frontend')));
+
+// Rota de teste ou suas rotas de API continuam aqui...
 
 const app = express();
 
